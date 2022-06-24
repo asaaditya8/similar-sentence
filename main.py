@@ -38,4 +38,7 @@ class MyMetric():
       
 if __name__ == "__main__":
     cmp = MyMetric()
-    cmp.distance('my name is Peter Parker', 'Parker Peter name my is')
+    dist = cmp.distance('my name is Peter Parker', 'Parker Peter name my is')
+
+    if dist < 20:
+        print('Likely similar')
